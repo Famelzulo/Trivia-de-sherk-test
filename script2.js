@@ -106,7 +106,7 @@ function timer() {
       } else if (pagesCounter == preguntas.length) {
         clearInterval(myInterval);
         alert("Puntos acumulados:  " + counter);
-        window.location.href = "/index.html";
+        window.location.href = "/Trivia-de-sherk-test/index.html";
       }
     } else {
       document.getElementById("countdown").innerHTML =
@@ -199,7 +199,7 @@ function checkAnswer(opcionSeleccionada, respuesta, inputId) {
     // alert que muestra el tootal de puntos acumulados
     if (preguntas.length <= pagesCounter) {
       alert("Puntos acumulados:  " + counter);
-      window.location.href = "/index.html";
+      window.location.href = "/Trivia-de-sherk-test/index.html";
     } else {
       siguiente();
       timeleft = 15;
