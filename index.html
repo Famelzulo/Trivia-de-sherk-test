@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="https://cdn.glitch.global/7b296aa8-50ea-40d2-9ec5-b6136d2369fe/icon.png?v=1699485499949" />
+    
+    <title>Shrek quizzie</title>
+  </head>
+  <body >
+    <!-- Logo de Shrek -->
+    <div class="logo-div">
+      <img class="logo" src="https://cdn.glitch.global/7b296aa8-50ea-40d2-9ec5-b6136d2369fe/logo.png?v=1699484524794">
+    </div>
+    
+      <div class="welcome-hd">
+        <center>
+          <h1>Bienvenido</h1>
+          <p><b>Por favor, ingresa tu nombre.</b></p>
+          <br />
+          
+          <div class="Card">
+            <label for="username"></label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Escribe tu nombre aquí"
+              required
+            />
+            <button onclick="guardarNombre();document.location.href='/menu.html';" type="submit" class="btn-comenzar">
+              Vamos a Jugar!
+            </button>
+          </div>
+          
+        </center>
+      </div>
+    
+    <script src="script2.js" async></script>
+    
+  </body>
+</html>

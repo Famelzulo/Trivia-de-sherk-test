@@ -1,0 +1,214 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+
+ /* importando google fonts :) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+
+body {
+  background:#B0C400;
+}
+
+/* Bloque de bienvenida */
+
+.logo-div {
+  margin-left: 30%;
+}
+.logo {
+  width: 60%;
+  margin-top: 4rem;
+}
+.welcome-hd{
+  padding: 10%;
+  margin-top: -2.5rem;
+}
+.welcome-hd .nombre{
+  width: 40%;
+  height: 30px;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+}
+.welcome-hd .comenzar {
+  width: 20%;
+  cursor: pointer;
+  height: 30px;
+  border: 0; 
+}
+.welcome-hd .comenzar:hover {
+  transition-duration: 0.5s;
+  background-color: #523213;
+  color: #D5DE2E;
+}
+
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: inherit;
+  font-size: 90%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+  outline: none;
+}
+
+/* Subheading */
+h3 {
+  color: #795A2D;
+}
+
+h4 {
+  color: #795A2D;
+}
+
+.Card {
+  background-color: #795A2D;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+.card-categorias {
+  border-radius: 5px;
+  width: 550px;
+  height: 300px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 2em;
+}
+.card-trivia {
+  border-radius: 5px;
+  width: 550px;
+  height: 500px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 2em;
+}
+
+.btn-comenzar {
+  color: #523213;
+  background-color: #D3CCA5;
+}
+.btn-comenzar:hover {
+  transition-duration: 0.3s;
+  background-color: #523213;
+  color: #D5DE2E;
+  cursor: pointer;
+}
+.title-trivia {
+  font-size: 2em;
+  margin-top: 0.5em;
+}
+.title-welcome {
+  color: #523213;
+  font-size: 1.5em;
+}
+.btn-restart {
+  width: 45%;
+  color: #523213;
+  background-color: #D3CCA5;
+  padding: 1em;
+  border: 1px solid lightgrey;
+}
+.btn-restart:hover {
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: #523213;
+  color: #D5DE2E;
+}
+.clock {
+/*   margin-top: 1em; */
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  width: 30%;
+  background-color: #523213;
+  color: #ffffff;
+  font-size: 1em;
+}
+#countdown {
+  color: #D5DE2E;
+  text-decoration: underline;
+}
+
+.slider-wrapper {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides-container {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+}
+.logo-trivia {
+  width: 30%;
+}
+.text-trivia {
+  color: #523213;
+  font-weight: bold;
+  font-size: 1.8em;
+}
+
